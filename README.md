@@ -12,7 +12,7 @@
 
 **🚀 A cutting-edge portfolio website showcasing digital innovation and coding excellence**
 
-[🌐 Live Demo](https://relamofcoder.github.io/realm-of-coder) • [📱 Mobile View](https://relamofcoder.github.io/realm-of-coder) • [🐛 Report Bug](https://github.com/relamofcoder/realm-of-coder/issues) • [✨ Request Feature](https://github.com/relamofcoder/realm-of-coder/issues)
+[🌐 Live Demo](https://relamofcoder.netlify.app/)
 
 </div>
 
