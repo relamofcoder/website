@@ -1,0 +1,101 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-bg: #0f172a;
+  --secondary-bg: #1e293b;
+  --glass-bg: rgba(30,41,59,0.7);
+  --card-bg: rgba(30,41,59,0.85);
+  --accent: #38bdf8;
+  --accent2: #a21caf;
+  --accent3: #f59e42;
+  --text: #f1f5f9;
+  --text-muted: #94a3b8;
+  --radius: 18px;
+  --shadow: 0 8px 32px rgba(56,189,248,0.13);
+  --transition: 0.22s cubic-bezier(.4,0,.2,1);
+  --glass-blur: blur(12px);
+  --gradient: linear-gradient(120deg, #38bdf8 0%, #a21caf 100%);
+  --gradient2: linear-gradient(120deg, #0ea5e9 0%, #f59e42 100%);
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  background: var(--primary-bg);
+  color: var(--text);
+  line-height: 1.6;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: radial-gradient(ellipse at 60% 10%, #38bdf822 0%, transparent 70%),
+    radial-gradient(ellipse at 20% 80%, #a21caf22 0%, transparent 70%),
+    linear-gradient(120deg, #0f172a 60%, #1e293b 100%);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+a:hover {
+  color: var(--accent2);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button, input, textarea, select {
+  font-family: inherit;
+  font-size: 1rem;
+  border-radius: var(--radius);
+  border: none;
+  outline: none;
+}
+
+button {
+  background: var(--gradient);
+  color: #fff;
+  padding: 0.7em 1.6em;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: background var(--transition), box-shadow var(--transition), transform var(--transition);
+  border: none;
+}
+button:hover {
+  background: var(--gradient2);
+  box-shadow: 0 12px 40px #38bdf855;
+  transform: translateY(-2px) scale(1.04);
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+section {
+  margin-bottom: 3.5rem;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: #1e293b;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--accent2);
+  border-radius: 8px;
+}

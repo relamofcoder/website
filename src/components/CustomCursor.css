@@ -1,0 +1,22 @@
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background: var(--gradient);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: background 0.2s, transform 0.08s, box-shadow 0.2s;
+  box-shadow: 0 4px 24px #38bdf855, 0 0 0 4px #a21caf33;
+  mix-blend-mode: lighten;
+  border: 2.5px solid var(--accent2);
+  animation: cursorPulse 1.2s infinite alternate;
+}
+
+@keyframes cursorPulse {
+  0% { box-shadow: 0 4px 24px #38bdf855, 0 0 0 4px #a21caf33; }
+  100% { box-shadow: 0 8px 32px #a21caf88, 0 0 0 8px #38bdf822; }
+} 
